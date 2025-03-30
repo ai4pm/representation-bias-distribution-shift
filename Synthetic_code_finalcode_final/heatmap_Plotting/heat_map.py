@@ -10,11 +10,11 @@ import os
 import gc
 import math
 
-h_sq_list = [0.25, 0.5]
+h_sq_list = [0.25, 0.5, 0.75, 1.0]
 rho_list = [0.0, 0.2, 0.4, 0.5, 0.6, 0.8, 1.0]
 lambda__list = [0.1, 0.2, 0.3, 0.4, 0.5]
 dict_gap = {}
-metric='_sq_corr'
+metric=''
 dict_gap[f'Mix1{metric}']= [f'Mix2{metric}']
 dict_gap[f'ind_1{metric}']= [f'ind_2{metric}']
 # dict_gap['tl2{metric}']= [f'Mix2{metric}', f'ind_2{metric}']
@@ -36,11 +36,11 @@ for temp_file_prefix in [
     ]:
     print(temp_file_prefix)
     for h_sq in h_sq_list:
-        fig_col = 5
+        fig_col = 4
         fig_row = len(dict_gap.keys())
         fig_heat, axs = plt.subplots(fig_row, fig_col, figsize=(20, 10))
         heat_col= 0
-        for ddp_str in ['eur', 'amr', 'sas', 'eas', 'afr']:
+        for ddp_str in ['amr', 'sas', 'eas', 'afr']:
             df_3d = pd.DataFrame(columns=['ddp_str', 'rho', 'lambda', 'key', 'median_gap', 'std_gap', 'pvalue', metric])  
             row_idx = 0
             for key in dict_gap.keys():

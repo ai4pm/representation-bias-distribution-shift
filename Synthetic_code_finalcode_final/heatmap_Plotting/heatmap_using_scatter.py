@@ -172,15 +172,15 @@ for temp_file_prefix in [
     print(temp_file_prefix)
 
     for h_sq in h_sq_list:
-        fig_col = 6
+        fig_col = 5
         fig_row = len(dict_gap.keys())
         fig_heat, axs = plt.subplots(nrows=fig_row, ncols=fig_col, figsize=(20, 10),
                             gridspec_kw={
-                                'width_ratios': [10, 10,10,10,10, 1],
+                                'width_ratios': [10, 10,10,10, 1],
                             'wspace': 0.3,
                             'hspace': 0.3})
         heat_col= 0
-        for ddp_str in ['EUR', 'AMR', 'SAS', 'EAS', 'AFR']:
+        for ddp_str in ['AMR', 'SAS', 'EAS', 'AFR']:
             df_3d = pd.DataFrame(columns=['ddp_str', 'rho', 'lambda', 'key', 'median_gap', 'std_gap', 'pvalue'])  
             row_idx = 0
             for key in dict_gap.keys():
