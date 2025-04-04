@@ -26,20 +26,20 @@ Here is the software description implementing Multi-Ancestral Machine Learning f
 - /4_Medain_values_of_experiments.py It can be used to generate excel file with 4 or 5 sheet, comparing EUR Vs DDP.
 
 ## Libraries required:
-graphviz==0.20.1
-h5py==3.11.0
-imbalanced-learn==0.12.3
-ipykernel==6.23.1
-keras==3.5.0
-keras-tuner==1.4.7
-matplotlib==3.7.1
-matplotlib-inline==0.1.6
-numpy==1.23.5
-pandas==2.0.1
-scikit-learn==1.2.2
-scipy==1.10.1
-seaborn==0.12.2
-tensorflow==2.17.0
+- Python==3.11.9
+- graphviz==0.20.1
+- h5py==3.11.0
+- imbalanced-learn==0.12.3
+- keras==3.5.0
+- keras-tuner==1.4.7
+- matplotlib==3.7.1
+- matplotlib-inline==0.1.6
+- numpy==1.23.5
+- pandas==2.0.1
+- scikit-learn==1.2.2
+- scipy==1.10.1
+- seaborn==0.12.2
+- tensorflow==2.17.0
 
 ## Authors:
 Sandeep Kumar and Yan Cui, ({skumar26, ycui2}@uthsc.edu).
