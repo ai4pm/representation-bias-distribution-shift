@@ -118,8 +118,8 @@ def extract_samples_snps(file_path, race, bed_file, n=None, selected_sample=None
 
 def data_extraction_ch(path):
     # extract samples and SNPs
-    n=100000
-    m=3000
+    n=10000
+    m=500
     # extract df with chr and range
     df = CHR_SNP_RACE_index(path)
     # save df
