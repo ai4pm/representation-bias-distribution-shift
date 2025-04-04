@@ -11,7 +11,8 @@ Here is the software description implementing Multi-Ancestral Machine Learning f
 - data_???_flipped.csv (contains same coding of alleles with respect to EUR's major alleles and minor alleles)
 
 ## Data Extraction: To extract above data do following: 
-- Download Harvard Dataverse (https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/COXHAP).
+- Download Harvard Dataverse (https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/COXHAP). Duplicate chr1.fam file for reamining chromosomes.
+- install bed-reader (i.e. pip install bed-reader)
 - run: ./Synthetic_code_finalcode_final/1_Extraction_Similar_SNPs_for_all_ancestory.py
 - then run: ./Synthetic_code_finalcode_final/2_Extracted_data_EDA_Analysis.py
 
