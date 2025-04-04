@@ -1,5 +1,4 @@
 # Data Inequality and Distribution Shifts on Multi-Ancestral Machine Learning for Polygenic Prediction
-Used AMR, SAS, EAS, and AFR population
 
 
 # Software description
