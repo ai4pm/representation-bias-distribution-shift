@@ -2,21 +2,12 @@
 Used AMR, SAS, EAS, and AFR population
 
 
-# Neural Network with Layer Normalization for Genomic Risk Analysis
+# Software description
+Here is the software description implementing Multi-Ancestral Machine Learning for Polygenic Prediction
 
-This repository contains a Python script for building and training neural networks with Layer Normalization to analyze genomic risk data. The script supports both regression and classification tasks and includes various learning paradigms such as independent learning, mixture learning, naive transfer learning, and super transfer learning.
+## Entity Path/location Note
+**Data**: ./10000P_500SNPs
+      - common_snps_ids.csv (contains the common SNPs across Multi-Ancestry
+      - data_???.csv (Contains common 500 SNPs for five different ancestry, extracted from Harward Dataverse: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/COXHAP)
+      - data_???_flipped.csv (contains same coding of alleles with respect to EUR's major alleles and minor alleles
 
-## Features
-
-- **Data Preprocessing**: Handles data standardization, splitting, and preparation for training.
-- **Flexible Neural Network Architecture**: Supports customizable hidden layers, activation functions, dropout, and regularization.
-- **Learning Paradigms**:
-  - Independent Learning
-  - Mixture Learning
-  - Naive Transfer Learning
-  - Super Transfer Learning
-- **Metrics**: Computes R², AUC, and PR AUC for model evaluation.
-- **Visualization**: Generates training history plots for performance tracking.
-- **Command-Line Interface**: Accepts parameters for flexible execution.
-
-## File Structure
