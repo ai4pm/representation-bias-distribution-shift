@@ -1,4 +1,4 @@
-# Data Inequality and Distribution Shifts on Multi-Ancestral Machine Learning for Polygenic Prediction
+# Data Representation Bias and Conditional Distribution Shift Drive Predictive Performance Disparities in Multi-Population Machine Learning
 
 
 # Software description
