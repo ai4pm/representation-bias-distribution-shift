@@ -14,7 +14,7 @@ Here is the software description implementing Multi-Ancestral Machine Learning f
 - Download Harvard Dataverse (https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/COXHAP). Duplicate chr1.fam file for remaining chromosomes.
 - install bed-reader (i.e. pip install bed-reader)
 - run: ./Data Extraction/Extraction_Similar_SNPs_for_all_ancestory.py
-- then run: ./Data Extraction/2_Extracted_data_EDA_Analysis.py
+- then run: ./Data Extraction/Extracted_data_EDA_Analysis.py
 
 ## Model:
 ./model/
