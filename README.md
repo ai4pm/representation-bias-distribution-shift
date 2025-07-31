@@ -18,7 +18,7 @@ Here is the software description implementing Multi-Ancestral Machine Learning f
 
 ## Model:
 ./model/
-/neural_network_exisitng_Layernorm.py:  This interface produces Polygenic Predictions of Multi-Ancestry using keras framework. In this REGRESSION_FLAG controls if we want regression or classification. For classification assign REGRESSION_FLAG = False.
+- /neural_network_exisitng_Layernorm.py:  This interface produces Polygenic Predictions of Multi-Ancestry using keras framework. In this REGRESSION_FLAG controls if we want regression or classification. For classification assign REGRESSION_FLAG = False.
 
 ## Polygenic scores generation
 ./Polygenic scores generation/
