@@ -16,14 +16,15 @@ Here is the software description implementing Multi-Ancestral Machine Learning f
 - run: ./Data Extraction/Extraction_Similar_SNPs_for_all_ancestory.py
 - then run: ./Data Extraction/Extracted_data_EDA_Analysis.py
 
-## Model:
-./model/
-- /neural_network_exisitng_Layernorm.py:  This interface produces Polygenic Predictions of Multi-Ancestry using keras framework. In this REGRESSION_FLAG controls if we want regression or classification. For classification assign REGRESSION_FLAG = False.
-
 ## Polygenic scores generation
 ./Polygenic scores generation/
 - /genomic_risk_case_control.py:  It generates binary case control for the cohorts for clasification task. Here np.percentile controls the percentage of case-controls.
 - /genomic_risk_case_control_regression.py:  It generates continuous phenotypes
+
+## Model:
+./model/
+- /neural_network_exisitng_Layernorm.py:  This interface produces Polygenic Predictions of Multi-Ancestry using keras framework. In this REGRESSION_FLAG controls if we want regression or classification. For classification assign REGRESSION_FLAG = False.
+
 
 ## results_post_processing
 ./results_post_processing/
@@ -32,8 +33,8 @@ Here is the software description implementing Multi-Ancestral Machine Learning f
 
 ## shell_file_creation_for_cluster
 ./shell_file_creation_for_cluster/
-- /H100_GPU_shell_file_creation_h_sq_rho_seperate.py:  It generates numerous shell files to run a seperate /model/neural_network_exisitng_Layernorm.py for each of the required comibnations of rho, heritability and DDP on H100 GPUs
-- /automated_shell_file_creation_h_sq_rho_seperate.py:  It does the same task as above for the cluster CPUs
+- /H100_GPU_shell_file_creation_h_sq_rho_seperate.py:  It generates numerous shell files to run a seperate /model/neural_network_exisitng_Layernorm.py for each of the required combinations of rho, heritability and DDP on H100 GPUs
+- /automated_shell_file_creation_h_sq_rho_seperate.py:  It does the same task as above for a CPU cluster
 
 ## Libraries required:
 - Python==3.11.9
