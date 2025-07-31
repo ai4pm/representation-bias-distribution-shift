@@ -13,16 +13,28 @@ Here is the software description implementing Multi-Ancestral Machine Learning f
 ## Data Extraction: To extract above data do following: 
 - Download Harvard Dataverse (https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/COXHAP). Duplicate chr1.fam file for remaining chromosomes.
 - install bed-reader (i.e. pip install bed-reader)
-- run: ./Synthetic_code_finalcode_final/1_Extraction_Similar_SNPs_for_all_ancestory.py
-- then run: ./Synthetic_code_finalcode_final/2_Extracted_data_EDA_Analysis.py
+- run: ./Data Extraction/Extraction_Similar_SNPs_for_all_ancestory.py
+- then run: ./Data Extraction/Extracted_data_EDA_Analysis.py
+
+## Polygenic scores generation
+./Polygenic scores generation/
+- /genomic_risk_case_control.py:  It generates binary case control for the cohorts for clasification task. Here np.percentile controls the percentage of case-controls.
+- /genomic_risk_case_control_regression.py:  It generates continuous phenotypes
 
 ## Model:
-./Synthetic_code_finalcode_final/
-- 3_neural_network_exisitng_Layernorm.py:  This interface produces Polygenic Predictions of Multi-Ancestry using keras framework. In this REGRESSION_FLAG controls if we want regression or classification. For classification assign REGRESSION_FLAG = False.
-- /genomic_risk_case_control.py It generates binary case control for the cohorts for clasification task. Here np.percentile controls the percentage of case-controls.
-- /genomic_risk_case_control_regression.py It generates continuous phenotypes
-- /5_Raw_pred_to_Scores.py It can be used to generate different evaluation metric from raw predictions
-- /4_Medain_values_of_experiments.py It can be used to generate excel file (based on different metrics) with 4 or 5 sheet, comparing EUR Vs DDP.
+./model/
+- /neural_network_exisitng_Layernorm.py:  This interface produces Polygenic Predictions of Multi-Ancestry using keras framework. In this REGRESSION_FLAG controls if we want regression or classification. For classification assign REGRESSION_FLAG = False.
+
+
+## results_post_processing
+./results_post_processing/
+- /Raw_pred_to_Scores.py:  It can be used to generate different evaluation metric from raw predictions
+- /Medain_values_of_experiments.py:  It can be used to generate excel file (based on different metrics) with 4 or 5 sheet, where each sheet compares EUR Vs a DDP.
+
+## shell_file_creation_for_cluster
+./shell_file_creation_for_cluster/
+- /H100_GPU_shell_file_creation_h_sq_rho_seperate.py:  It generates numerous shell files to run a seperate /model/neural_network_exisitng_Layernorm.py for each of the required combinations of rho, heritability and DDP on H100 GPUs
+- /automated_shell_file_creation_h_sq_rho_seperate.py:  It does the same task as above for a CPU cluster
 
 ## Libraries required:
 - Python==3.11.9

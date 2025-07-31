@@ -1,9 +1,9 @@
 
 REGRESSION_FLAG = True
 if REGRESSION_FLAG:
-    from genomic_risk_case_control_regression import *
+    from representation-bias-distribution-shift/Polygenic scores generation/genomic_risk_case_control_regression import *
 else:
-    from genomic_risk_case_control import *
+    from representation-bias-distribution-shift/Polygenic scores generation/genomic_risk_case_control import *
 
 from numpy.random import seed
 import numpy as np
