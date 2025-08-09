@@ -12,8 +12,7 @@ Here is the software description implementing Multi-Ancestral Machine Learning f
 | 2      | https://pypi.org/project/bed-reader/ | pip install bed-reader |
 | 3      |./Data/Extraction_Similar_SNPs_for_all_ancestory.py | To extract data for all the ancestry as in the manuscript, set variables: n (no. of patients) = 10000; m (no. of SNPs) = 500;|
 | 4      |  ./Data/Extracted_data_EDA_Analysis.py  |This ensures that coding of alleles in all ancestries are in synchronus to european ancestry       |
-## Entity Path/location Note
-**Data:** ./10000P_500SNPs/
+## Examples  ./examples/
 - common_snps_ids.csv (contains the common SNPs across Multi-Ancestry)
 - data_*.csv (Contains common 500 SNPs for five different ancestry, extracted from Harvard Dataverse: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/COXHAP)
 - data_*_flipped.csv (contains same coding of alleles with respect to EUR's major alleles and minor alleles)
