@@ -4,17 +4,17 @@
 # Software description
 Here is the software description implementing Multi-Ancestral Machine Learning for Polygenic Prediction
 
-## Entity Path/location Note
-**Data:** ./10000P_500SNPs/
-- common_snps_ids.csv (contains the common SNPs across Multi-Ancestry)
-- data_*.csv (Contains common 500 SNPs for five different ancestry, extracted from Harvard Dataverse: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/COXHAP)
-- data_*_flipped.csv (contains same coding of alleles with respect to EUR's major alleles and minor alleles)
-
 ## Data Extraction: To extract above data do following: 
 - Download Harvard Dataverse (https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/COXHAP). Duplicate chr1.fam file for remaining chromosomes.
 - install bed-reader (i.e. pip install bed-reader)
 - run: ./Data Extraction/Extraction_Similar_SNPs_for_all_ancestory.py
 - then run: ./Data Extraction/Extracted_data_EDA_Analysis.py
+  
+## Entity Path/location Note
+**Data:** ./10000P_500SNPs/
+- common_snps_ids.csv (contains the common SNPs across Multi-Ancestry)
+- data_*.csv (Contains common 500 SNPs for five different ancestry, extracted from Harvard Dataverse: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/COXHAP)
+- data_*_flipped.csv (contains same coding of alleles with respect to EUR's major alleles and minor alleles)
 
 ## Polygenic scores generation
 ./Polygenic scores generation/
